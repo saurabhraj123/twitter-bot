@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter bot",
+  "version": "1.0.1",
+  "description": "A twitter bot",
+  "author": "me4saurabh4u@gmail.com",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
